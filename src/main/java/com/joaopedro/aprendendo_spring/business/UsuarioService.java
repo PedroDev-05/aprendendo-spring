@@ -5,13 +5,13 @@ import com.joaopedro.aprendendo_spring.infrastructure.exceptions.ConflictExcepti
 import com.joaopedro.aprendendo_spring.infrastructure.exceptions.ResourceNotFoundException;
 import com.joaopedro.aprendendo_spring.infrastructure.repository.UsuarioRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
 public class UsuarioService {
+
 
     private final UsuarioRepository usuarioRepository;
     private final PasswordEncoder passwordEncoder;
