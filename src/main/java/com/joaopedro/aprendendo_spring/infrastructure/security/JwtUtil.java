@@ -17,7 +17,6 @@ public class JwtUtil {
     private final String secretKey = "sua-chave-secreta-super-segura-que-deve-ser-bem-longa";
 
 
-
     // Gera um token JWT com o nome de usuário e validade de 1 hora
     public String generateToken(String username) {
         return Jwts.builder()
@@ -56,4 +55,5 @@ public class JwtUtil {
         // Verifica se o nome de usuário do token corresponde ao fornecido e se o token não está expirado
         return (extractedUsername.equals(username) && !isTokenExpired(token));
     }
+
 }
